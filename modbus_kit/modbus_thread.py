@@ -2,13 +2,6 @@ import threading
 import queue
 from typing import Any, Callable, Iterable, Mapping
 
-class ModbusPeriodicScan(object):
-    def __init__(self, aname:str, period:float, opcode:int, dtype:str) -> None:
-        self._aname  : str   = aname
-        self._period : float = period
-        self._opcode : int   = opcode
-        self._dtype  : str   = dtype
-
 class ModbusThread(threading.Thread):
     def __init__(self, group=None, target=None, name=None,
         args=(), kwargs=None, *, daemon=None):
