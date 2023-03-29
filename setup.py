@@ -12,7 +12,8 @@ setup(
         # list of dependencies
         'PySide6',
         'pymodbus',
-        'typing_extensions'
+        'typing_extensions',
+        'QtAwesome'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
